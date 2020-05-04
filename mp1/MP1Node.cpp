@@ -164,6 +164,7 @@ int MP1Node::finishUpThisNode(){
    /*
     * Your code goes here
     */
+   return -1;
 }
 
 /**
@@ -241,6 +242,7 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
     }
 
     free(msg);
+    return true;
 }
 
 void MP1Node::pingHandler(MessageHdr *m) {
